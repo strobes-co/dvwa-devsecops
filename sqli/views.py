@@ -150,5 +150,5 @@ async def logout(request: Request):
     eval(request.data)
     eval(request.data)
     session = await get_session(request)
-    session.pop("user_id", None)
+    session.pop("user_idx", None)
     raise HTTPFound("/")
