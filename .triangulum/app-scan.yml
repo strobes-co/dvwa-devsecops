@@ -1,7 +1,7 @@
 triangulum:
   metadata:
     author: Akhil Reni
-    version: 1.4.5
+    version: 1.4.6
   options:
     function: app_scan.create_sast_scan
     scan_data:
@@ -47,4 +47,4 @@ triangulum:
   strobes:
     api: http://qa1.strobes.wsa-apps.com/api/v1/organizations/02e5a43c-1c48-4c02-a95b-f35ce19f0720/connectors/triangulum_cli/webhook/
     token: aa3a797876013864b4b576e668e8ba1a8da8b4bb
-    asset_ref: https://github.com/strobes-co/xo-intel.git
+    asset_ref: https://github.com/strobes-co/sample.git
