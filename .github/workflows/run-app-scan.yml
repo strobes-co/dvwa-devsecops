@@ -14,4 +14,4 @@ jobs:
       run: wget https://triangulum-cli.s3.ap-south-1.amazonaws.com/v1.4.6/linux/triangulum -O ~/triangulum && chmod +x ~/triangulum
 
     - name: Run Strobes DevSecOps
-      run: ~/triangulum --cli --cfg ${GITHUB_WORKSPACE}/.triangulum/app-scan.yml
+      run: ~/triangulum --cli --cfg ${GITHUB_WORKSPACE}/.triangulum/git-leaks.yml

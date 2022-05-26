@@ -8,7 +8,7 @@ triangulum:
       key_id: 8e2a871a-b163-bf2b-0a4b-eb5bec40d4ef
       key_secret: nN503KMaOe+vtx6jUqJ1d1vTyizMGCLNbeD2H9UfFag=
       config:
-        ScanName: SAST scan remote 6
+        ScanName: SAST scan remote 2
         ScanType: Production
         AppId: 5fd56d61-9fd7-44b9-931f-f27d991349a3
         # ARSAFileId:
