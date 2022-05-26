@@ -1,0 +1,52 @@
+triangulum:
+  metadata:
+    author: Akhil Reni
+    version: 1.4.5
+​
+  options:
+    function: app_scan.create_sast_scan
+    scan_data:
+      key_id: 08bda0ad-c9e8-2e61-0aee-4680a0f8e9aa
+      key_secret: IUzgJ4JTBkJQhfaYntwRolrIvIvT8HqkTk56zcG3INY=
+      config:
+        ScanName: SAST scan remote 6
+        ScanType: Production
+        AppId: 94b2145f-d5d2-40c2-992f-ac0b44d70c35
+        # ARSAFileId:
+        # ApplicationFileId:
+      vcs_config:
+        name: git
+        type: local
+        path: {{ env.GITHUB_WORKSPACE }}
+        scan_type: commit
+        commit: latest
+​
+​
+  # severity_rule:
+  #   critical: 0
+  #   medium: 0
+  #   high: 0
+  #   info: 0
+  #   low: 0
+​
+  # string_match_rule:
+  #   title: r"CVE-\d{4}-\d{1,5}"
+​
+  # ignore_string_match_rule:
+  #   description: r":\W\'"
+​
+  # alert:
+  #   slack:
+  #     url: <slack url>
+  #   smtp:
+  #     hostname: smtp.gmail.com
+  #     port: 587
+  #     username: dummy@gmail.com
+  #     password: xxxxxxxxxxxxxxx
+  #     to: dummy2@gmail.com
+  #     tls: enabled
+​
+  strobes:
+    api: http://qa1.strobes.wsa-apps.com/api/v1/organizations/02e5a43c-1c48-4c02-a95b-f35ce19f0720/connectors/triangulum_cli/webhook/
+    token: aa3a797876013864b4b576e668e8ba1a8da8b4bb
+    asset_ref: https://github.com/strobes-co/xo-intel.git
