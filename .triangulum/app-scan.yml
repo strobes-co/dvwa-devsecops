@@ -5,12 +5,12 @@ triangulum:
   options:
     function: app_scan.create_sast_scan
     scan_data:
-      key_id: 08bda0ad-c9e8-2e61-0aee-4680a0f8e9aa
-      key_secret: IUzgJ4JTBkJQhfaYntwRolrIvIvT8HqkTk56zcG3INY=
+      key_id: 8e2a871a-b163-bf2b-0a4b-eb5bec40d4ef
+      key_secret: nN503KMaOe+vtx6jUqJ1d1vTyizMGCLNbeD2H9UfFag=
       config:
         ScanName: SAST scan remote 6
         ScanType: Production
-        AppId: 94b2145f-d5d2-40c2-992f-ac0b44d70c35
+        AppId: 5fd56d61-9fd7-44b9-931f-f27d991349a3
         # ARSAFileId:
         # ApplicationFileId:
       vcs_config:
