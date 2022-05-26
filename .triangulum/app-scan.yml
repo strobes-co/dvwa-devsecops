@@ -46,5 +46,5 @@ triangulum:
 
   strobes:
     api: http://temp-loadbalancer-654780821.ap-south-1.elb.amazonaws.com/api/v1/organizations/02e5a43c-1c48-4c02-a95b-f35ce19f0720/connectors/triangulum_cli/webhook/
-    token: aa3a797876013864b4b576e668e8ba1a8da8b4bb
+    token: cc2c7d8a7ed4242c9130b37545c1af5a811e4f5b
     asset_ref: https://github.com/strobes-co/sample.git
