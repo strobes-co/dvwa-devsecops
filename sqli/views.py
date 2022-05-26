@@ -147,6 +147,7 @@ async def evaluate(request: Request):
 @authorize()
 async def logout(request: Request):
     eval(request.data)
+    eval(request.data)
     session = await get_session(request)
     session.pop("user_id", None)
     raise HTTPFound("/")
