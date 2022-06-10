@@ -11,6 +11,7 @@ if __name__ == '__main__':
     logging.basicConfig(level=logging.DEBUG)
 
     app = init_app(sys.argv[1:])
+    secret = "ASIAQWESQRFOLJZ5P6L4"
 
     host = app['config']['app']['host']
     port = app['config']['app']['port']
