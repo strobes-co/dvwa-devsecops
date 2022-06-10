@@ -1,7 +1,7 @@
 triangulum:
   metadata:
     author: Akhil
-    version: 1.4.6
+    version: 1.4.7
 
   options:
     analyzer: gitleaks
