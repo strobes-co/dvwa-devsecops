@@ -10,8 +10,3 @@ triangulum:
       path: "."   # This is respective to the directory cli is running in
     scan_data:
       loglevel: DEBUG
-
-  strobes:
-    api: http://demo.strobes.co/api/v1/organizations/5898f8e3-6ce3-4f00-914e-5dcdaf15805e/connectors/triangulum_cli/webhook/
-    token: 900e0bcf26983629a62fce068042dd22d1b000b7
-    asset_ref: https://github.com/strobes-co/sample.git
