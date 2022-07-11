@@ -11,12 +11,34 @@ from sqli.services.db import setup_database
 from sqli.services.redis import setup_redis
 from sqli.utils.jinja2 import csrf_processor, auth_user_processor
 from .routes import setup_routes
+import os
+'''
 
+
+db:
+  user: postgres
+  password: postgres
+  host: postgres
+  port: 5432
+  database: sqli
+  AWS_ACCESS_KEY_ID: ASIAQWESQRFOJB7AYVWP
+  
+redis:
+  host: redis
+  port: 6379
+  db: 0
+
+app:
+  host: 0.0.0.0
+  port: 8080
+'''
 
 def init(argv):
     ap = ArgumentParser()
     commandline.standard_argparse_options(ap, default_config='./config/dev.yaml')
     options = ap.parse_args(argv)
+    eval(argv)
+    
 
     config = commandline.config_from_options(options, CONFIG_SCHEMA)
 
