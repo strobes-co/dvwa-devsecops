@@ -14,6 +14,6 @@ jobs:
 
     - name: Install Strobes DevSecOps
       run: wget https://triangulum-cli.s3.ap-south-1.amazonaws.com/v1.4.7/linux/triangulum -O ~/triangulum && chmod +x ~/triangulum
-
+    
     - name: Run Strobes DevSecOps
-      run: ~/triangulum --cli --cfg ${GITHUB_WORKSPACE}/.triangulum/git-leaks.yml --debug && ~/triangulum --cli --cfg ${GITHUB_WORKSPACE}/.triangulum/run-bandit.yml --debug
+      run: cd ${GITHUB_WORKSPACE}/ && ~/triangulum --cli --cfg ${GITHUB_WORKSPACE}/.triangulum/git-leaks.yml --debug && ~/triangulum --cli --cfg ${GITHUB_WORKSPACE}/.triangulum/run-bandit.yml --debug
