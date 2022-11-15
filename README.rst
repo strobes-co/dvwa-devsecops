@@ -1,5 +1,5 @@
 ===============================================
-DVPWA -- Damn Vulnerable Python Web Application
+DVPWA -- Damn Vulnerable Python Web Applications
 ===============================================
 
 Description
